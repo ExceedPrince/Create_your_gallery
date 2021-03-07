@@ -1,0 +1,132 @@
+#dragdrop-pic {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border: 3px dotted black;
+  text-align: center;
+  margin-top: 2%;
+}
+
+#preview-pic {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin-top: 2%;
+}
+
+#preview-pic img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#show-pic {
+  max-width: 300px;
+  max-height: 200px;
+}
+
+#show-dd-pic {
+  max-width: 300px;
+  max-height: 200px;
+}
+
+#bigCon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 2%;
+}
+
+#mozaikPic {
+  height: 100px;
+}
+
+input#ddInput {
+  display: block;
+  width: 300px;
+  height: 200px;
+  opacity: 0;
+}
+
+span {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0px;
+  border-radius: 5px;
+  max-width: 90vw;
+  transition: 1000ms all;
+  display: flex;
+  justify-content: center;
+}
+
+.inner {
+  position: relative;
+  height: auto;
+  transition: 1000ms all;
+  display: inline-flex;
+  background: whitesmoke;
+  padding: 12px;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.close {
+  position: absolute;
+  width: fit-content;
+  right: -15px;
+  top: -15px;
+  padding: 0 12px 5px;
+  border-radius: 50%;
+  background: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #fff;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+#modalPic{
+  height: 80vh;
+}

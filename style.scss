@@ -1,0 +1,61 @@
+#dragdrop-pic {
+	position: relative;
+	width: 300px;
+	height: 200px;
+	border: 3px dotted black;
+	text-align: center;
+	margin-top: 2%;
+}
+
+#preview-pic {
+	position: relative;
+	width: 300px;
+	height: 200px;
+	margin-top: 2%;
+
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+#show-pic {
+	max-width: 300px;
+	max-height: 200px;
+}
+
+#show-dd-pic {
+	max-width: 300px;
+	max-height: 200px;
+}
+
+#bigCon {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#gallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 2%;
+}
+
+#mozaikPic {
+	height: 100px;
+}
+
+input#ddInput {
+	display: block;
+	width: 300px;
+	height: 200px;
+	opacity: 0;
+}
+
+span {
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+}
